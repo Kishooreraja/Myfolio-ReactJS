@@ -1,0 +1,60 @@
+import React from 'react';
+
+const educationTimeline = [
+  { year: '2017', content: 'Started my journey in software engineering with a BCA from Bharathiyar University.' },
+  { year: '2018', content: 'Completed major coursework in software engineering.' },
+  { year: '2019', content: 'Gained hands-on experience with various programming projects.' },
+  { year: '2020', content: 'Graduated with a BCA from Bharathiyar University.' },
+];
+
+const experienceTimeline = [
+  { year: '2020', content: 'Started working as a junior software engineer, gaining foundational experience in full-stack development.' },
+  { year: '2021', content: 'Worked on various projects and developed my skills in full-stack development.' },
+  { year: '2022', content: 'Transitioned to HR management, working in recruitment, employee relations, and payroll management.' },
+  { year: '2023', content: 'Pursuing an MBA in HRM while refocusing on software development, working on projects like Foodiefly.' },
+  { year: '2024', content: 'Actively seeking full-stack developer roles to leverage my skills in innovative projects.' },
+];
+
+const TimelineItem = ({ year, content }) => (
+  <div className="flex items-start mb-12">
+    <div className="w-4 h-4 bg-gradient-to-t from-blue-500 to-purple-600 rounded-full relative z-10"></div>
+    <div className="ml-4">
+      <h3 className="text-lg font-semibold text-gray-300">{year}</h3>
+      <p>{content}</p>
+    </div>
+  </div>
+);
+
+const AboutMe = () => {
+  return (
+    <div className="py-8">
+      <div className="container mx-auto px-4">
+        <h2 className="text-2xl font-semibold mb-6">About Me</h2>
+        <div className="flex flex-col sm:flex-row">
+          {/* Education Section */}
+          <div className="flex-1 relative pr-8 sm:pr-24">
+            <div className="absolute top-0 left-1/2 w-1 bg-gradient-to-t from-blue-500 to-purple-600 h-full"></div>
+            <div className="relative">
+              <h3 className="text-xl font-semibold mb-4">Education</h3>
+              {educationTimeline.map((item) => (
+                <TimelineItem key={item.year} year={item.year} content={item.content} />
+              ))}
+            </div>
+          </div>
+          {/* Experience Section */}
+          <div className="flex-1 relative pl-8 sm:pl-24">
+            <div className="absolute top-0 left-1/2 w-1 bg-gradient-to-t from-blue-500 to-purple-600 h-full"></div>
+            <div className="relative">
+              <h3 className="text-xl font-semibold mb-4">Experience</h3>
+              {experienceTimeline.map((item) => (
+                <TimelineItem key={item.year} year={item.year} content={item.content} />
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default AboutMe;
