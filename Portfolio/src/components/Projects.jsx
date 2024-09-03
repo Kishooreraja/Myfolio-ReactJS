@@ -36,7 +36,7 @@ const Projects = () => {
           </p>
           <div className="flex gap-4 mt-10 mb-4 justify-center">
             <a
-              href="https://example.com/live-preview " // Replace with actual URL
+              href="https://kishoore.bss.design" // Replace with actual URL
               className="py-3 px-11  bg-gradient-to-r from-purple-600 to-blue-500 text-white rounded-full transition-all hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-600 text-center"
               target="_blank" 
               rel="noopener noreferrer"
