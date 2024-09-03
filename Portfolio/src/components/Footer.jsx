@@ -130,7 +130,7 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="https://wa.me/yourphonenumber" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/+919688368728" target="_blank" rel="noopener noreferrer">
                 <img src={whatsapp} className="w-12 h-12 transition-transform transform hover:scale-125" alt="WhatsApp" />
               </a>
             </li>
