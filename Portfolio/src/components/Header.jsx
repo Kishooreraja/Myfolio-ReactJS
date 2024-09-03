@@ -41,7 +41,7 @@ const Header = () => {
       }`} 
     >
       <div className="container mx-auto px-6 py-4 flex justify-between items-center" >
-        <a href="home">
+        <a href="banner">
           <h1 className="font-bold text-xl tracking-tight text-white cursor-pointer hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-600 hover:bg-clip-text hover:text-transparent transition-all duration-300">
             Kishoore Portfolio
           </h1>
